@@ -21,6 +21,27 @@
 <app-problem-list></app-problem-list>
 
 <!-- 意思是：希望在我这个app.component.html中显示我们刚刚做出来的problem-list；
-此处用了problem-list的selector，让其进行显示
+此处用了 problem-list 的 selector，让其进行显示
 注意：要想看到实际显示效果，terminal需要通过两次 cd... 回到 oj-client（根目录）下面，运行 “ng serve”
+疑问：为什么根目录是oj-client，不是Week1？
+运行完毕后去localhost:4200，发现更改
+ -->
+
+<!--  week1 实战课1 01:26:24 遇到报错：
+ dhcp-c101a6da:oj-client yuqi.liang$ ng serve
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+                                                                              u Date: 2018-10-21T11:23:58.512Z
+Hash: 11e6f364fec092e84115
+Time: 4000ms
+chunk {main} main.js, main.js.map (main) 1.92 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 690 bytes [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.22 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 15.6 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 326 kB [initial] [rendered]
+
+ERROR in src/app/components/problem-list/problem-list.component.ts(36,2): error TS1005: ',' expected.
+src/app/components/problem-list/problem-list.component.ts(47,199): error TS1005: ':' expected.
+src/app/components/problem-list/problem-list.component.ts(56,2): error TS1005: ',' expected.
+
+ℹ ｢wdm｣: Failed to compile.
  -->
